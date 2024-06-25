@@ -1,0 +1,1358 @@
+{
+    "docs": [
+        {
+            "id": 5618635,
+            "name": "Русская живопись",
+            "year": 2022,
+            "description": "Фильм посвящен истории русской живописи, ее истокам, главным вехам и основным периодам своего развития. В нем будут освещены разные этапы истории Русской живописи: древнерусский период, затем знакомство России с западной школой живописи и открытие в 1757 году «Академия трех знатнейших художеств»; история XIX столетия, как золотого века русской живописи; несколько периодов ХХ века, когда русская живопись встала на путь отрицания классики и разделения на огромное количество различных течений, затем Советский период, создание в 1932 году Союза художников СССР, художники в годы Великой Отечественной войны, в период оттепели, застоя и перестройки; и, разумеется, современное искусство сегодня, перспективы его развития.",
+            "rating": {
+                "kp": 0,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10703859/0845eabd-5056-4138-b94c-63748b59ff10/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10703859/0845eabd-5056-4138-b94c-63748b59ff10/x1000"
+            },
+            "genres": [
+                {
+                    "name": "документальный"
+                }
+            ]
+        },
+        {
+            "id": 5618634,
+            "name": "Русская классическая музыка",
+            "year": 2023,
+            "description": "Фильм посвящен большому пути, который прошла русская музыка в разные периоды истории: от знаменной музыки до произведений современных композиторов. С точки зрения общемировой истории культуры русская классическая музыка в том виде, в котором мы ее знаем сегодня, появилась довольно поздно — в первой половине 19 века. Но появление это имело во всем мире ошеломляющий эффект. Значительная часть повествования посвящена 19 веку и таким величайшим композиторам, как Глинка, Даргомыжский, Чайковский, Бородин, Мусоргский и многим другим. Большое место в фильме занимает ХХ век, подаривший не менее гениальных композиторов: Свиридов, Хачатурян, Прокофьев, Шостакович, Щедрин. Завершает фильм исследование современности.",
+            "rating": {
+                "kp": 0,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10893610/93d69d78-7550-421b-a38e-c492045c7b56/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10893610/93d69d78-7550-421b-a38e-c492045c7b56/x1000"
+            },
+            "genres": [
+                {
+                    "name": "документальный"
+                }
+            ]
+        },
+        {
+            "id": 5618630,
+            "name": "Русский театр",
+            "year": 2022,
+            "description": "Посвящается истории русского театра, его истокам, главным вехам и основным периодам своего развития, его влиянии на страну и мир. В фильме будут освещены разные этапы истории русского театра: истоки в народных балаганных представлениях и мистерии-проповедях; открытие публичных и крепостных театров в России; Александр Островский — основоположник современной русской драматургии; Константин Станиславский — создатель новой школы актерского мастерства; творчество Олега Ефремова, Юрия Любимова, Галины Волчек, Андрея Гончарова и, разумеется, современный театр сегодня, перспективы его развития.",
+            "rating": {
+                "kp": 0,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/9784475/463308ea-a3cb-4c50-a44b-83c0b6de6706/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/9784475/463308ea-a3cb-4c50-a44b-83c0b6de6706/x1000"
+            },
+            "genres": [
+                {
+                    "name": "документальный"
+                }
+            ]
+        },
+        {
+            "id": 5618570,
+            "name": "Русская архитектура",
+            "year": 2024,
+            "description": "Большое путешествие в историю, попытка осмыслить, как менялась отечественная архитектура, какие события и личности влияли на эти изменения, и понять с каким багажом мы подошли ко дню сегодняшнему. Что создают современные архитекторы, и какой они видят архитектуру будущего. Мы надеемся, что наш фильм привлечёт внимание не только любителей русского зодчества, но и вызовет интерес у людей пока ещё далёких от яркого многообразия национального архитектурного наследия.",
+            "rating": {
+                "kp": 0,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10893610/65166c66-284e-41ff-89a8-7ebde44752ce/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10893610/65166c66-284e-41ff-89a8-7ebde44752ce/x1000"
+            },
+            "genres": [
+                {
+                    "name": "документальный"
+                }
+            ]
+        },
+        {
+            "id": 5613575,
+            "name": "Цветняшки. Песни",
+            "year": 2022,
+            "description": "Добрые истории, которые знакомят малышей и их родителей с героями Вселенной Цветняшек. Песни Цветняшек формируют музыкальный вкус, расширяют кругозор, способствуют пополнению активного и пассивного словарного запаса и становлению речи, создают приятную атмосферу, развивая малыша в разных направлениях.",
+            "rating": {
+                "kp": 0,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/1898899/e5195492-bfe0-41f1-a4ad-2540c4be54d2/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/1898899/e5195492-bfe0-41f1-a4ad-2540c4be54d2/x1000"
+            },
+            "genres": [
+                {
+                    "name": "детский"
+                },
+                {
+                    "name": "мультфильм"
+                },
+                {
+                    "name": "мюзикл"
+                }
+            ],
+            "releaseYears": [
+                {
+                    "start": 2022,
+                    "end": 2022
+                }
+            ]
+        },
+        {
+            "id": 5608205,
+            "name": "Дихотомии",
+            "year": 2023,
+            "description": "Рассказ о людях в медицине. Фильм построен на откровенных воспоминаниях и размышлениях 50 человек, которые лечатся, лечат, помогают выздоравливать и принимать себя в новом качестве. Перед камерой они впервые выходят из функциональных ролей «врач — пациент», делятся всем наболевшим, что не могли сказать в моменте, и размышляют о темах, которые редко обсуждаются в контексте медицины — о гендере, деньгах, вере в высшие силы, о романтических и сексуальных отношениях и обо всем, что им по-человечески важно.",
+            "rating": {
+                "kp": 0,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10703859/93aeb117-53e6-4ae7-ad93-3bc60efe6c6a/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10703859/93aeb117-53e6-4ae7-ad93-3bc60efe6c6a/x1000"
+            },
+            "genres": [
+                {
+                    "name": "документальный"
+                }
+            ]
+        },
+        {
+            "id": 5608206,
+            "name": "Арена ди Верона: Тоска",
+            "year": 2023,
+            "description": "Каждое лето тысячи любителей музыки стекаются в Верону на одно из важнейших оперных событий года — оперный сезон на древнеримской Арене. Постановка использует обширное пространство амфитеатра для размещения массивных сценических элементов, заимствованных из реальных римских локаций, в которых происходит действие.",
+            "rating": {
+                "kp": 0,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10900341/cb0cae92-e312-4527-adf3-494b08b50b32/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10900341/cb0cae92-e312-4527-adf3-494b08b50b32/x1000"
+            },
+            "genres": [
+                {
+                    "name": "музыка"
+                }
+            ]
+        },
+        {
+            "id": 5613545,
+            "name": "Лучший джасс – русский",
+            "year": 2022,
+            "description": "Фильм рассказывает о зарождении джаза, о его появлении, развитии и становлении в России, о взаимопроникновении культур и влиянии русского авангарда начала 20-го века на американский джаз, о серьëзном и курьëзном в джазовом сообществе.",
+            "rating": {
+                "kp": 0,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10768063/aaf31049-6437-4022-bb67-4fad82773cff/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10768063/aaf31049-6437-4022-bb67-4fad82773cff/x1000"
+            },
+            "genres": [
+                {
+                    "name": "документальный"
+                }
+            ]
+        },
+        {
+            "id": 5461825,
+            "name": "Что видят животные",
+            "year": 2018,
+            "description": "Как животные воспринимают окружающий мир? Как зрение животного связано с его местом в природе? Профессор Томас Кронин рассказывает, как устроены самые сложные и необычные глаза в царстве животных, и как у животных вообще появились органы зрения.",
+            "rating": {
+                "kp": 0,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10671298/92887c89-fd6c-409b-9624-80c2b609d152/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10671298/92887c89-fd6c-409b-9624-80c2b609d152/x1000"
+            },
+            "genres": [
+                {
+                    "name": "короткометражка"
+                },
+                {
+                    "name": "реальное ТВ"
+                }
+            ]
+        },
+        {
+            "id": 5605746,
+            "name": "Бэмби",
+            "year": 2024,
+            "description": null,
+            "rating": {
+                "kp": 0,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10671298/45a7025d-cd98-409c-820e-1a5b1b76f718/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10671298/45a7025d-cd98-409c-820e-1a5b1b76f718/x1000"
+            },
+            "genres": [
+                {
+                    "name": "драма"
+                }
+            ]
+        },
+        {
+            "id": 5595345,
+            "name": "MF Призрак",
+            "year": 2023,
+            "description": "В 2020-х электромобили доминируют в повседневной жизни, а интерес к автомобилям с двигателями внутреннего сгорания поддерживается лишь благодаря автогонкам MFG. Сотни гонщиков, за которыми онлайн наблюдают 30 миллионов зрителей, изо всех сил стремятся попасть в топ-15, чтобы побороться за главный приз в размере 100 миллионов иен. Среди тех, кто также стремится к вершине — 19-летняя Каната Ривингтон, которая приехала в Японию после обучения в гоночной школе Англии и участвует в чемпионате под фамилией Катагири. Для Канаты участие в MFG лишь ступенька на пути к главной цели — найти пропавшего много лет назад отца.",
+            "rating": {
+                "kp": 0,
+                "imdb": 7.4,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10703959/27947b5d-973d-4d7e-ba60-783ab2442d9e/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10703959/27947b5d-973d-4d7e-ba60-783ab2442d9e/x1000"
+            },
+            "genres": [
+                {
+                    "name": "аниме"
+                },
+                {
+                    "name": "мультфильм"
+                },
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "спорт"
+                }
+            ],
+            "releaseYears": [
+                {
+                    "start": 2023,
+                    "end": null
+                }
+            ]
+        },
+        {
+            "id": 5595307,
+            "name": "Взрывной храбрец Брейверн",
+            "year": 2024,
+            "description": "Во время совместных учений армий разных стран на Гавайях на военных внезапно нападает неизвестный враг. Используя гигантские механизированные костюмы Титанострайдер, солдат сухопутных сил самообороны Японии Ао Исами и американский морпех Льюис Смит объединяются, чтобы одолеть опасного противника.",
+            "rating": {
+                "kp": 0,
+                "imdb": 7.8,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10592371/5eadd58e-51f0-45a0-93f3-9bc8fbe1d54e/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10592371/5eadd58e-51f0-45a0-93f3-9bc8fbe1d54e/x1000"
+            },
+            "genres": [
+                {
+                    "name": "аниме"
+                },
+                {
+                    "name": "мультфильм"
+                },
+                {
+                    "name": "фантастика"
+                },
+                {
+                    "name": "боевик"
+                },
+                {
+                    "name": "комедия"
+                }
+            ],
+            "releaseYears": [
+                {
+                    "start": 2024,
+                    "end": 2024
+                }
+            ]
+        },
+        {
+            "id": 5595575,
+            "name": "Доктор Экстаз",
+            "year": 2024,
+            "description": null,
+            "rating": {
+                "kp": 0,
+                "imdb": 7.1,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 98.47
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10835644/545b57f2-74b9-4805-bb4f-c10a7f4fe355/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10835644/545b57f2-74b9-4805-bb4f-c10a7f4fe355/x1000"
+            },
+            "genres": [
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "комедия"
+                }
+            ],
+            "releaseYears": [
+                {
+                    "start": 2024,
+                    "end": null
+                }
+            ]
+        },
+        {
+            "id": 5595556,
+            "name": "Мисс День и Ночь",
+            "year": 2024,
+            "description": "Ли Ми-джин уже несколько лет тщетно пытается найти приличную работу, а пока перебивается подработками и получает различные квалификационные сертификаты. Однажды утром она обнаруживает себя в теле 50-летней женщины. И так теперь происходит каждый день: с восходом солнца — женщина средних лет, с заходом — девушка.",
+            "rating": {
+                "kp": 0,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "genres": [
+                {
+                    "name": "комедия"
+                },
+                {
+                    "name": "мелодрама"
+                },
+                {
+                    "name": "фэнтези"
+                }
+            ],
+            "releaseYears": [
+                {
+                    "start": 2024,
+                    "end": null
+                }
+            ],
+            "poster": {
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10812607/90a3238c-4761-4df0-86dd-86d689ac227f/x1000",
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10812607/90a3238c-4761-4df0-86dd-86d689ac227f/orig"
+            }
+        },
+        {
+            "id": 5595330,
+            "name": "Девчонки с Хоккайдо чудо как милы",
+            "year": 2024,
+            "description": "Старшеклассник Цубаса Сики переезжает из Токио на Хоккайдо и сразу начинает исследовать живописные зимние пейзажи, которых он никогда не видел в столице. С первым же порывом чистого морозного воздуха идеализированное представление Цубасы о самой северной префектуре Японии рушится в один миг. Пытаясь найти дорогу к своему новому дому, парень встречает одетую в короткую юбку Минами Фуюки — разговорчивую и дружелюбную уроженку Хоккайдо.",
+            "rating": {
+                "kp": 0,
+                "imdb": 6.7,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/4483445/bec4a477-9d68-4d58-9b70-0d25dcb4d0ef/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/4483445/bec4a477-9d68-4d58-9b70-0d25dcb4d0ef/x1000"
+            },
+            "genres": [
+                {
+                    "name": "аниме"
+                },
+                {
+                    "name": "мультфильм"
+                },
+                {
+                    "name": "мелодрама"
+                },
+                {
+                    "name": "комедия"
+                }
+            ],
+            "releaseYears": [
+                {
+                    "start": 2024,
+                    "end": 2024
+                }
+            ]
+        },
+        {
+            "id": 5599850,
+            "name": "Поезд 13",
+            "year": 2024,
+            "description": "В поезде, который следует на курорт, начинается кровавый террор. При каждом въезде в тоннель силы тьмы захватывают вагон за вагоном, а пассажиры погружаются в пучину ужаса.",
+            "rating": {
+                "kp": 0,
+                "imdb": 5.2,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10812607/6532bab5-6e14-44e9-b412-97b1f83bd3b2/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10812607/6532bab5-6e14-44e9-b412-97b1f83bd3b2/x1000"
+            },
+            "genres": [
+                {
+                    "name": "ужасы"
+                }
+            ]
+        },
+        {
+            "id": 5600641,
+            "name": "Кое-что ещё",
+            "year": 2024,
+            "description": "Спасаясь от полиции, грабители отец и сын случайно находят убежище в летнем лагере для инвалидов.",
+            "rating": {
+                "kp": 0,
+                "imdb": 7.4,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "genres": [
+                {
+                    "name": "комедия"
+                }
+            ],
+            "poster": {
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/4486454/293de215-8229-4948-8bb4-1b5682d525aa/x1000",
+                "url": "https://image.openmoviedb.com/kinopoisk-images/4486454/293de215-8229-4948-8bb4-1b5682d525aa/orig"
+            }
+        },
+        {
+            "id": 5599921,
+            "name": "Перейти черту",
+            "year": 2024,
+            "description": null,
+            "rating": {
+                "kp": 0,
+                "imdb": 5.8,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10900341/4f80ef13-ce9a-471b-9e99-ff8f8470ce37/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10900341/4f80ef13-ce9a-471b-9e99-ff8f8470ce37/x1000"
+            },
+            "genres": [
+                {
+                    "name": "комедия"
+                },
+                {
+                    "name": "криминал"
+                }
+            ]
+        },
+        {
+            "id": 5595295,
+            "name": "Голос из космоса",
+            "year": 2023,
+            "description": "Аннабелль и Дино — друзья, которых объединяет любовь к астрономии. Однажды они получают таинственное послание из космоса. Ребята уверены, что с ними пытались связаться внеземные цивилизации, но взрослые отказываются им верить. Во время экскурсии на космодром они случайно попадают на космический корабль и оказываются на орбите совсем одни. Воспользовавшись шансом, друзья отправляются в захватывающее приключение на поиски инопланетян.",
+            "rating": {
+                "kp": 0,
+                "imdb": 6.2,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/4486362/9b4af53d-afe8-47a6-9fe6-e3848001718a/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/4486362/9b4af53d-afe8-47a6-9fe6-e3848001718a/x1000"
+            },
+            "genres": [
+                {
+                    "name": "фантастика"
+                },
+                {
+                    "name": "фэнтези"
+                },
+                {
+                    "name": "приключения"
+                },
+                {
+                    "name": "семейный"
+                }
+            ]
+        },
+        {
+            "id": 5598980,
+            "name": "Фрэнк. Засланец из космоса",
+            "year": 2024,
+            "description": null,
+            "rating": {
+                "kp": 0,
+                "imdb": 4.9,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "genres": [
+                {
+                    "name": "фантастика"
+                },
+                {
+                    "name": "комедия"
+                }
+            ],
+            "poster": {
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10812607/5dfbed8a-ecda-489a-956d-502ba3bbceb6/x1000",
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10812607/5dfbed8a-ecda-489a-956d-502ba3bbceb6/orig"
+            }
+        },
+        {
+            "id": 5599923,
+            "name": "Отель «Жизнь»",
+            "year": 2024,
+            "description": null,
+            "rating": {
+                "kp": 0,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10893610/cc8ce696-49b9-42ae-bf47-8a9059757a13/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10893610/cc8ce696-49b9-42ae-bf47-8a9059757a13/x1000"
+            },
+            "genres": [
+                {
+                    "name": "драма"
+                }
+            ]
+        },
+        {
+            "id": 5595544,
+            "name": "Ослепительная Кирари",
+            "year": 2022,
+            "description": "Однажды робкая школьница Кирари, которая любит рисовать, встречает загадочную девочку, которая переносит её в иной мир.",
+            "rating": {
+                "kp": 0,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/4486454/75627a13-3ca8-481e-9276-5280155a3b4a/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/4486454/75627a13-3ca8-481e-9276-5280155a3b4a/x1000"
+            },
+            "genres": [
+                {
+                    "name": "аниме"
+                },
+                {
+                    "name": "мультфильм"
+                },
+                {
+                    "name": "короткометражка"
+                },
+                {
+                    "name": "фэнтези"
+                }
+            ]
+        },
+        {
+            "id": 5595294,
+            "name": "На 1 секунду впереди, на 1 секунду позади",
+            "year": 2023,
+            "description": null,
+            "rating": {
+                "kp": 0,
+                "imdb": 6.5,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10835644/63dbb8ba-9986-45cb-b852-bc6143ce481b/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10835644/63dbb8ba-9986-45cb-b852-bc6143ce481b/x1000"
+            },
+            "genres": [
+                {
+                    "name": "мелодрама"
+                },
+                {
+                    "name": "фэнтези"
+                },
+                {
+                    "name": "комедия"
+                }
+            ]
+        },
+        {
+            "id": 5595545,
+            "name": "Космическая путешественница Титти",
+            "year": 2022,
+            "description": "Будущее. Обычная офисная работница Титти решает провести отпуск в космическом лагере. По пути ей приходится совершить аварийную посадку на планете, которая является кладбищем для списанных космических кораблей.",
+            "rating": {
+                "kp": 0,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10703959/e9a3e341-1146-4c29-bfe5-e07d788fb079/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10703959/e9a3e341-1146-4c29-bfe5-e07d788fb079/x1000"
+            },
+            "genres": [
+                {
+                    "name": "аниме"
+                },
+                {
+                    "name": "мультфильм"
+                },
+                {
+                    "name": "короткометражка"
+                },
+                {
+                    "name": "фантастика"
+                },
+                {
+                    "name": "приключения"
+                }
+            ]
+        },
+        {
+            "id": 5599849,
+            "name": "Проклятие джинна",
+            "year": 2023,
+            "description": "Семья Вина становится объектом преследования страшных джиннов. Пытаясь спастись, Вин перевозит родных в отдалённую южную провинцию, но зло настигает их и здесь.",
+            "rating": {
+                "kp": 0,
+                "imdb": 4.2,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/4486362/11d3ffcc-081d-48f2-81b3-39dd8d88e8af/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/4486362/11d3ffcc-081d-48f2-81b3-39dd8d88e8af/x1000"
+            },
+            "genres": [
+                {
+                    "name": "ужасы"
+                }
+            ]
+        },
+        {
+            "id": 5599055,
+            "name": "Лучшим игрокам приготовиться",
+            "year": 2024,
+            "description": null,
+            "rating": {
+                "kp": 0,
+                "imdb": 2.6,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "genres": [
+                {
+                    "name": "комедия"
+                },
+                {
+                    "name": "приключения"
+                }
+            ],
+            "poster": {
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10900341/12abda61-6c05-456d-9388-ef312f5ab0f1/x1000",
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10900341/12abda61-6c05-456d-9388-ef312f5ab0f1/orig"
+            }
+        },
+        {
+            "id": 5599852,
+            "name": "Золото или хрень",
+            "year": 2024,
+            "description": null,
+            "rating": {
+                "kp": 0,
+                "imdb": 7.3,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10835644/864b8f8d-7e75-4b38-a2c3-ef12754246c9/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10835644/864b8f8d-7e75-4b38-a2c3-ef12754246c9/x1000"
+            },
+            "genres": [
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "комедия"
+                }
+            ]
+        },
+        {
+            "id": 5595677,
+            "name": "Тастаймын-ау сени",
+            "year": 2024,
+            "description": "Жарас и Алмагуль женаты уже более десяти лет. Жарас работает в большой компании на хорошей должности, Алмагуль не работает, но хочет развиваться как личность. Ни о чем не спрашивая Алмагуль, Жарас покрывает её нужды лишь деньгами. Из-за пренебрежения Алмагуль начинает пьянствовать. Однажды, напившись, Алмагуль позорит Жараса перед его начальником. Не выдержав такого, на следующий день Жарас решает отправить жену на лечение к одному из сильнейших лекарей.",
+            "rating": {
+                "kp": 0,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/9784475/7c375fc3-0094-48d7-8a10-b7470f416caf/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/9784475/7c375fc3-0094-48d7-8a10-b7470f416caf/x1000"
+            },
+            "genres": [
+                {
+                    "name": "комедия"
+                },
+                {
+                    "name": "ужасы"
+                }
+            ]
+        },
+        {
+            "id": 5599851,
+            "name": "Охотник на призраков",
+            "year": 2024,
+            "description": null,
+            "rating": {
+                "kp": 0,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/4486454/7fdd2331-c85e-4241-a36a-c79de9e0639e/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/4486454/7fdd2331-c85e-4241-a36a-c79de9e0639e/x1000"
+            },
+            "genres": [
+                {
+                    "name": "ужасы"
+                }
+            ]
+        },
+        {
+            "id": 5595321,
+            "name": "Жара позднего лета",
+            "year": 2024,
+            "description": null,
+            "rating": {
+                "kp": 0,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10592371/34ac357a-127e-46e0-bfd9-a1fa91c6d183/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10592371/34ac357a-127e-46e0-bfd9-a1fa91c6d183/x1000"
+            },
+            "genres": [
+                {
+                    "name": "драма"
+                }
+            ]
+        },
+        {
+            "id": 5498864,
+            "name": "Полночь",
+            "year": 2024,
+            "description": null,
+            "rating": {
+                "kp": 0,
+                "imdb": 6.9,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10703959/c3345aa5-9070-4b71-b45f-ca1cf4f9e49d/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10703959/c3345aa5-9070-4b71-b45f-ca1cf4f9e49d/x1000"
+            },
+            "genres": [
+                {
+                    "name": "короткометражка"
+                },
+                {
+                    "name": "боевик"
+                },
+                {
+                    "name": "криминал"
+                }
+            ]
+        },
+        {
+            "id": 5593289,
+            "name": "Неправильный способ использования исцеляющей магии",
+            "year": 2024,
+            "description": "Кэн Усато — обычный старшеклассник, который мечтает, чтобы в его жизни произошло что-нибудь фантастическое. И вскоре так и происходит, когда он переносится в другой мир вместе с выдающимися членами ученического совета Рюсэном Кадзуки и Судзунэ Инуками. По прибытии в королевство Ллингер троицу принимают за героев, которым поручено остановить армию повелителя демонов. Правда, в отличие от Рюсэна и Судзунэ, которые получили крутые способности, Кэн не является героем и обладает лишь чрезвычайно редкой магией исцеления.",
+            "rating": {
+                "kp": 7.048,
+                "imdb": 7.3,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/9784475/8328345d-6db8-49d5-9331-0ac4c356f4ef/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/9784475/8328345d-6db8-49d5-9331-0ac4c356f4ef/x1000"
+            },
+            "genres": [
+                {
+                    "name": "аниме"
+                },
+                {
+                    "name": "мультфильм"
+                },
+                {
+                    "name": "фэнтези"
+                },
+                {
+                    "name": "боевик"
+                },
+                {
+                    "name": "приключения"
+                }
+            ],
+            "releaseYears": [
+                {
+                    "start": 2024,
+                    "end": 2024
+                }
+            ]
+        },
+        {
+            "id": 5594708,
+            "name": "Королева со скальпелем",
+            "year": 2024,
+            "description": "В прошлой жизни известная талантливая женщина-хирург Аои Такамото была злодейкой благородного происхождения по имени Элиз де Клоранс. Эгоизм, дерзость и одержимая любовь к жениху, принцу Линдену де Романофф, привели к гибели всей её семьи и в конечном счете к её собственной смерти. После перерождения Элиз осознаёт ошибки прошлого и решает измениться, но трагическая авиакатастрофа обрывает её жизнь. Девушка снова перерождается и на этот раз в своём теле, но ещё до официальной помолвки с Линденом. Полная решимости спасти семью и избавить Линдена от нежелательного брака, Элиз намерена использовать свои передовые медицинские знания, чтобы продолжать спасать жизни.",
+            "rating": {
+                "kp": 0,
+                "imdb": 6.8,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10768063/a241495e-4043-469f-956f-4000c3c43c19/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10768063/a241495e-4043-469f-956f-4000c3c43c19/x1000"
+            },
+            "genres": [
+                {
+                    "name": "аниме"
+                },
+                {
+                    "name": "мультфильм"
+                },
+                {
+                    "name": "фэнтези"
+                },
+                {
+                    "name": "мелодрама"
+                },
+                {
+                    "name": "приключения"
+                }
+            ],
+            "releaseYears": [
+                {
+                    "start": 2024,
+                    "end": 2024
+                }
+            ]
+        },
+        {
+            "id": 5594722,
+            "name": "Плов под прикрытием",
+            "year": 2024,
+            "description": "Парни из разных областей объединяют усилия в поисках мошенников, чтобы вернуть деньги, которые они вложили в их мошенническую структуру. Они находят новый офис мошенников и открывают кафе под прикрытием неподалеку, чтобы вывести их на чистую воду.",
+            "rating": {
+                "kp": 0,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10809116/3ec4b3b1-6667-4235-a88a-c0690b711561/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10809116/3ec4b3b1-6667-4235-a88a-c0690b711561/x1000"
+            },
+            "releaseYears": [
+                {
+                    "start": null,
+                    "end": null
+                },
+                {
+                    "start": 2024,
+                    "end": null
+                }
+            ],
+            "genres": [
+                {
+                    "name": "комедия"
+                },
+                {
+                    "name": "драма"
+                }
+            ]
+        },
+        {
+            "id": 5593838,
+            "name": "Становясь волшебницей",
+            "year": 2024,
+            "description": "Команда из трёх девушек-волшебниц стоит на страже города, в котором живёт Утэна Хиираги. Как и большинство жителей, Утэна восхищается отважным трио. Однажды она встречает чёрное существо по имени Веналита, которое предлагает ей стать волшебницей. Незамедлительно согласившись, Утэна и подумать не могла, что вступает на сторону сил тьмы.",
+            "rating": {
+                "kp": 7.294,
+                "imdb": 7.1,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10809116/abe50785-e206-42c2-9aaf-551a79c013a8/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10809116/abe50785-e206-42c2-9aaf-551a79c013a8/x1000"
+            },
+            "genres": [
+                {
+                    "name": "аниме"
+                },
+                {
+                    "name": "мультфильм"
+                },
+                {
+                    "name": "фэнтези"
+                },
+                {
+                    "name": "боевик"
+                },
+                {
+                    "name": "комедия"
+                }
+            ],
+            "releaseYears": [
+                {
+                    "start": 2024,
+                    "end": 2024
+                }
+            ]
+        },
+        {
+            "id": 5594751,
+            "name": "Без фильтров",
+            "year": 2023,
+            "description": "Джеймс Хэмилтон начал свою карьеру в Нью-Йорке в начале 70-х. Он сотрудничал с Harper’s Bazaar, Vanity Fair, Rolling Stone, The New York Observer и 20 лет был штатным фотографом The Village Voice. Хэмилтон снимал абсолютно всех героев американской культуры, от Вуди Аллена и Сюзан Зонтаг до Лу Рида и Джима Джармуша. В фильме Джеймс обсуждает фотографию и журналистику вместе с коллегами и поклонниками, вспоминает о своей удивительной бабушке, на старости лет ставшей популярной актрисой, и травит байки о знаменитостях, например, о том, как уговорил Жана-Люка Годара позировать на балконе небоскреба, хотя тот панически боялся высоты.",
+            "rating": {
+                "kp": 0,
+                "imdb": 7.7,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10703959/b5c5a127-fe6b-4fd7-98b0-a097e44d58ec/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10703959/b5c5a127-fe6b-4fd7-98b0-a097e44d58ec/x1000"
+            },
+            "genres": [
+                {
+                    "name": "документальный"
+                }
+            ]
+        },
+        {
+            "id": 5582607,
+            "name": "Суперниндзя. Дети",
+            "year": 2024,
+            "description": "Детская версия спортивного экстрим-шоу, в котором участники борются за приз, проходя сложнейшую полосу препятствий.",
+            "rating": {
+                "kp": 0,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "genres": [
+                {
+                    "name": "реальное ТВ"
+                },
+                {
+                    "name": "игра"
+                },
+                {
+                    "name": "детский"
+                }
+            ],
+            "releaseYears": [
+                {
+                    "start": 2024,
+                    "end": null
+                }
+            ],
+            "poster": {
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/4486362/53dfc1fa-7af2-4642-a4ec-6d04d385f3a3/x1000",
+                "url": "https://image.openmoviedb.com/kinopoisk-images/4486362/53dfc1fa-7af2-4642-a4ec-6d04d385f3a3/orig"
+            }
+        },
+        {
+            "id": 5582628,
+            "name": "Титаны",
+            "year": 2024,
+            "description": "Искусственный интеллект отберёт 99 лучших атлетов страны, чтобы столкнуть их в бескомпромиссной битве за 10 миллионов рублей и звание главного титана России.",
+            "rating": {
+                "kp": 0,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10893610/780c271e-e25b-4d2b-82b9-94d8d9283638/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10893610/780c271e-e25b-4d2b-82b9-94d8d9283638/x1000"
+            },
+            "genres": [
+                {
+                    "name": "реальное ТВ"
+                },
+                {
+                    "name": "спорт"
+                }
+            ],
+            "releaseYears": [
+                {
+                    "start": 2024,
+                    "end": null
+                }
+            ]
+        },
+        {
+            "id": 5591585,
+            "name": "Пушкин и... Михайловское. Начало",
+            "year": 2023,
+            "description": "Молодой поэт переживает смешные и загадочные приключения. Но ему помогают настоящие друзья, а в нём самом есть доброе верное сердце и любовь к жизни.",
+            "rating": {
+                "kp": 0,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10809116/7a634319-751f-42b9-afc4-afa01a4e8f63/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10809116/7a634319-751f-42b9-afc4-afa01a4e8f63/x1000"
+            },
+            "genres": [
+                {
+                    "name": "мультфильм"
+                }
+            ]
+        },
+        {
+            "id": 491464,
+            "name": "Конец пути",
+            "year": 2006,
+            "description": "На собственном дне рождения телеведущая Сальма случайно убивает девушку, которая увела её парня. Проходит 7 лет. Терзаемая чувством вины, Сальма обращается за помощью к психиатру, который, как выясняется позже, является братом погибшей девушки.",
+            "rating": {
+                "kp": 0,
+                "imdb": 4.8,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10893610/fba8fd27-ea54-4336-ba57-52dc7c3d768b/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10893610/fba8fd27-ea54-4336-ba57-52dc7c3d768b/x1000"
+            },
+            "genres": [
+                {
+                    "name": "мелодрама"
+                },
+                {
+                    "name": "драма"
+                }
+            ]
+        },
+        {
+            "id": 5582620,
+            "name": "Старая песня",
+            "year": 2021,
+            "description": null,
+            "rating": {
+                "kp": 0,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10703959/f79606ad-ea3a-4fa5-8ae2-2966aa75122b/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10703959/f79606ad-ea3a-4fa5-8ae2-2966aa75122b/x1000"
+            },
+            "genres": [
+                {
+                    "name": "короткометражка"
+                },
+                {
+                    "name": "драма"
+                }
+            ]
+        },
+        {
+            "id": 525546,
+            "name": "Давай потанцуем",
+            "year": 2006,
+            "description": "Чтобы отвлечься от рутинных будней и сложных взаимоотношений с мужем, женщина-адвокат Сальва решает ходить на уроки танцев, которые в итоге помогают ей справиться со стрессом. Однако супруг не в восторге от нового увлечения жены, а окружающие её осуждают.",
+            "rating": {
+                "kp": 0,
+                "imdb": 2.5,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/4486454/d309b550-5482-4a24-9ef5-00dbec438be4/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/4486454/d309b550-5482-4a24-9ef5-00dbec438be4/x1000"
+            },
+            "genres": [
+                {
+                    "name": "драма"
+                }
+            ]
+        },
+        {
+            "id": 1083568,
+            "name": "Горько-сладкая жизнь",
+            "year": 2008,
+            "description": "Владелица небольшого продуктового магазина и её дочь вступают в битву с инвесторами-застройщиками, которые пытаются завладеть этим местом для строительства новых зданий.",
+            "rating": {
+                "kp": 0,
+                "imdb": 4.7,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/4486454/9c81793d-733e-408a-9aa4-4fee725eb558/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/4486454/9c81793d-733e-408a-9aa4-4fee725eb558/x1000"
+            },
+            "genres": [
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "комедия"
+                }
+            ]
+        },
+        {
+            "id": 5591408,
+            "name": "Хочу сейчас",
+            "year": 2024,
+            "description": "Софи — белокурая двадцатилетняя американка, путешествующая по Италии со своей сестрой. Готовая вернуться в Калифорнию, в последний день отпуска на Сицилии она встречает парня Джулио и его друзей, с которыми проведет самую непредсказуемую, безумную, шокирующую, захватывающую, романтическую и пугающую ночь в своей жизни. Через двадцать четыре часа после их встречи они уже никогда не станут прежними.",
+            "rating": {
+                "kp": 0,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "genres": [
+                {
+                    "name": "драма"
+                }
+            ],
+            "poster": {
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/1898899/cd1c3ff8-6a4f-493d-8ed9-6e6f6169fa11/x1000",
+                "url": "https://image.openmoviedb.com/kinopoisk-images/1898899/cd1c3ff8-6a4f-493d-8ed9-6e6f6169fa11/orig"
+            }
+        },
+        {
+            "id": 5591409,
+            "name": "Налог на спасение",
+            "year": 2024,
+            "description": "О людях, оказавшихся в сложных ситуациях и о цене, которую им пришлось заплатить, чтобы спасти свою жизнь.",
+            "rating": {
+                "kp": 0,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10900341/fcc045ab-8ecd-442d-ad85-8c17bc9c9703/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10900341/fcc045ab-8ecd-442d-ad85-8c17bc9c9703/x1000"
+            },
+            "genres": [
+                {
+                    "name": "документальный"
+                }
+            ]
+        },
+        {
+            "id": 5461786,
+            "name": "Самые опасные существа",
+            "year": 2021,
+            "description": "Какое животное самое опасное для человека? Лев? Тигр? Да, это и вправду свирепые хищники, иногда нападающие на людей. Но гораздо больше людей погибло от нападения бегемотов или буйволов, а также домашних коров, свиней и собак.",
+            "rating": {
+                "kp": 8.733,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10835644/f882bd82-949a-435e-b3f6-feef50c98d98/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10835644/f882bd82-949a-435e-b3f6-feef50c98d98/x1000"
+            },
+            "genres": [
+                {
+                    "name": "реальное ТВ"
+                }
+            ]
+        },
+        {
+            "id": 5582022,
+            "name": "Спасибо, следующий!",
+            "year": 2024,
+            "description": "После болезненного разрыва молодая женщина-адвокат заручается поддержкой лучших друзей и с головой окунается в запутанный мир современных свиданий.",
+            "rating": {
+                "kp": 7.743,
+                "imdb": 5.6,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "genres": [
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "мелодрама"
+                },
+                {
+                    "name": "комедия"
+                }
+            ],
+            "releaseYears": [
+                {
+                    "start": 2024,
+                    "end": null
+                }
+            ],
+            "poster": {
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10812607/bca2b978-7193-4380-b781-a82cec4c030a/x1000",
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10812607/bca2b978-7193-4380-b781-a82cec4c030a/orig"
+            }
+        },
+        {
+            "id": 5582133,
+            "name": "Хакни свой организм: Тайны кишечника",
+            "year": 2024,
+            "description": "О том, какую роль в общем самочувствии играет здоровье кишечника как части пищеварительной системы.",
+            "rating": {
+                "kp": 0,
+                "imdb": 6.6,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "genres": [
+                {
+                    "name": "документальный"
+                }
+            ],
+            "poster": {
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/1898899/52ecf523-6d2f-40fc-85ad-219fc049370f/x1000",
+                "url": "https://image.openmoviedb.com/kinopoisk-images/1898899/52ecf523-6d2f-40fc-85ad-219fc049370f/orig"
+            }
+        },
+        {
+            "id": 4922488,
+            "name": "Возвращение Тани Такер",
+            "year": 2022,
+            "description": null,
+            "rating": {
+                "kp": 0,
+                "imdb": 7.3,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10893610/9abc6adb-0ac8-4755-8cb6-de0a434e546a/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10893610/9abc6adb-0ac8-4755-8cb6-de0a434e546a/x1000"
+            },
+            "genres": [
+                {
+                    "name": "документальный"
+                }
+            ]
+        },
+        {
+            "id": 5582051,
+            "name": "Хорошо ловится рыбка-бананка",
+            "year": 2019,
+            "description": "Один день молодоженов на курорте.",
+            "rating": {
+                "kp": 0,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10893610/1c8741b3-ca86-4dff-83dd-da245b7e4821/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10893610/1c8741b3-ca86-4dff-83dd-da245b7e4821/x1000"
+            },
+            "genres": [
+                {
+                    "name": "короткометражка"
+                }
+            ]
+        }
+    ],
+    "total": 210774,
+    "limit": 50,
+    "page": 2,
+    "pages": 4216
+}
