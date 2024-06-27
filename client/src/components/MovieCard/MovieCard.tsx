@@ -1,5 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import React, { useContext } from "react";
+import React from "react";
 import { IMovie } from "../MovieList/MovieList";
 import styles from "./MovieCard.module.css";
 import { useNavigate } from "react-router-dom";

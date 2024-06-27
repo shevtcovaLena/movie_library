@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 // import api from "../api";
-import Select, { SelectChangeEvent } from "@mui/material/Select";
+import Select from "@mui/material/Select";
 import {
   RadioGroup,
   FormControlLabel,
@@ -11,6 +11,7 @@ import {
   MenuItem,
 } from "@mui/material";
 import styles from './Filter.module.css'
+import api from "../../api";
 
 interface FilterProps {
   onGenreChange: (genre: string) => void;
@@ -185,18 +186,18 @@ export function Filter({
   const [genres, setGenres] = useState<typeof genresInit>(genresInit);
 
   useEffect(() => {
-    //   const fetchGenres = async () => {
-    //     try {
-    // const response = await api.get<GenreData[]>('v1/movie/possible-values-by-field', {
-    //   method: 'GET',
-    //   params: {field: 'genres.name'},
-    // });
-    // setGenres(response.data.map((el) => el.name));
-    // } catch (error) {
-    //   console.error('Error fetching movies', error);
-    // }
-    // };
-    // fetchGenres();
+      const fetchGenres = async () => {
+        try {
+    const response = await api.get<GenreData[]>('v1/movie/possible-values-by-field', {
+      method: 'GET',
+      params: {field: 'genres.name'},
+    });
+    setGenres(response.data.map((el) => el.name));
+    } catch (error) {
+      console.error('Error fetching movies', error);
+    }
+    };
+    fetchGenres();
   }, []);
 
   return (

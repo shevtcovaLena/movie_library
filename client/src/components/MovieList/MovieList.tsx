@@ -85,7 +85,7 @@ export function MovieList() {
         sx={{ m: 1 }}
         count={data.pages}
         color="primary"
-        onChange={(e, page) => setPage(page)}
+        onChange={(_, page) => setPage(page)}
         page={page}
       />
       <div className={styles.mainbox}>
@@ -99,11 +99,10 @@ export function MovieList() {
       <Pagination
         count={data.pages}
         color="primary"
-        onChange={(e, page) => setPage(page)}
+        onChange={(_, page) => setPage(page)}
         page={page}
       />
     </>
   );
 }
 
-// export default MovieList;
