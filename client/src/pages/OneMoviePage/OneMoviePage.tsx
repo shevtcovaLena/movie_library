@@ -33,7 +33,7 @@ export function OneMoviePage() {
             alt={movie.name || "Название не доступно"}
           />
         </div>
-        <div>
+        <div className={styles.text}>
           <h1>
             {movie.name} ({movie.year})
           </h1>

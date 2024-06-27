@@ -7,6 +7,7 @@
 
 #root {
   max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
   padding: 2rem;
   background-color: rgba(0, 1, 52, 0.312);
@@ -14,9 +15,15 @@
   min-height: 100vh;
 }
 
+.logo-box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 #logo {
   cursor: pointer;
-  position: absolute;
 }
 
 .MuiPagination-ul {

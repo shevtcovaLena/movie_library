@@ -1,10 +1,10 @@
-import { useContext, useEffect, useLayoutEffect, useState } from "react";
+// import React from "react";
+import { MovieCard } from "../../components";
+import { useEffect, useState } from "react";
 import api from "../../api";
-import data from "../../assets/api.json";
-import { MovieCard, Filter } from "..";
-import styles from "./MovieList.module.css";
+import styles from "./SearchPage.module.css";
 import { Pagination, Skeleton } from "@mui/material";
-import { ContextAll } from "../../context/context";
+import { useParams } from "react-router-dom";
 
 export interface IMovie {
   id: string;
@@ -26,30 +26,18 @@ export interface IMovie {
   genres: { name: string }[];
 }
 
-export function MovieList({ favorites }: { favorites?: boolean }) {
+export function SearchPage() {
   const [movies, setMovies] = useState<IMovie[]>([]);
   const [page, setPage] = useState(1);
-  const [pageCount, setPageCount] = useState<number>(1)
-  const [selectedGenre, setSelectedGenre] = useState<string>("");
-  const [selectedRating, setSelectedRating] = useState<string>("");
-  const [selectedYear, setSelectedYear] = useState<string>("");
+  const [pageCount, setPageCount] = useState<number>(1);
   const [isLoading, setLoading] = useState<boolean>(true);
-  const [idArray, setIdArray] = useState<string[]>([]);
-  const { favoriteMovies } = useContext(ContextAll);
 
-  useLayoutEffect(() => {
-    setIdArray(() => {
-      return favorites ? favoriteMovies : [];
-    });
-  }, []);
+  const { searchQuery } = useParams<{ searchQuery: string }>();
 
   useEffect(() => {
     const fetchMovies = async () => {
       try {
-        const genreQuery = selectedGenre ? selectedGenre : undefined;
-        const ratingQuery = selectedRating ? selectedRating : undefined;
-
-        const response = await api.get("/v1.4/movie", {
+        const response = await api.get("/v1.4/movie/search", {
           params: {
             page,
             limit: 50,
@@ -63,35 +51,22 @@ export function MovieList({ favorites }: { favorites?: boolean }) {
               "poster",
               "genres",
             ],
-            ...(idArray.length && { id: idArray }),
-            ...(genreQuery && { "genres.name": genreQuery }),
-            ...(ratingQuery && { "rating.imdb": ratingQuery }),
-            ...(selectedYear && { year: selectedYear }),
-            notNullFields: ["name", "year", "rating.imdb", "poster.url"],
+            query: searchQuery,
           },
         });
         setMovies(response.data.docs);
         setPageCount(response.data.pages);
         setLoading(false);
-        // setMovies(data.docs);
       } catch (error) {
         console.error("Error fetching movies", error);
       }
     };
+
     fetchMovies();
-  }, [page, selectedGenre, selectedRating, selectedYear, idArray]);
+  }, [page, searchQuery]);
 
   return (
-    <>
-      <div>
-        <Filter
-          onGenreChange={setSelectedGenre}
-          onRatingChange={setSelectedRating}
-          onYearChange={setSelectedYear}
-        />
-      </div>
-      <br />
-
+    <div className={styles.container}>
       <Pagination
         sx={{ m: 1 }}
         count={pageCount}
@@ -116,7 +91,11 @@ export function MovieList({ favorites }: { favorites?: boolean }) {
                 sx={{ m: 1 }}
               />
             ))}
-        {(movies.length === 0) && <div><p>Результаты отсутствуют. Попробуйте изменить запрос.</p></div>}
+        {movies.length === 0 && (
+          <div>
+            <p>Результаты отсутствуют. Попробуйте изменить запрос.</p>
+          </div>
+        )}
       </div>
       <Pagination
         sx={{ m: 1 }}
@@ -125,6 +104,6 @@ export function MovieList({ favorites }: { favorites?: boolean }) {
         onChange={(_, page) => setPage(page)}
         page={page}
       />
-    </>
+    </div>
   );
 }

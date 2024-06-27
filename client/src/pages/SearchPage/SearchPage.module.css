@@ -1,0 +1,9 @@
+.container {
+  margin-top: 250px;
+}
+
+.mainbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

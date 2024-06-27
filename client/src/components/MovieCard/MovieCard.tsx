@@ -1,7 +1,11 @@
 // import React from "react";
+import { useContext } from "react";
+import { IconButton } from "@mui/material";
 import { IMovie } from "../MovieList/MovieList";
 import styles from "./MovieCard.module.css";
 import { useNavigate } from "react-router-dom";
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import { ContextAll } from "../../context/context";
 
 interface Props {
   movie: IMovie;
@@ -9,6 +13,8 @@ interface Props {
 
 export function MovieCard({ movie }: Props) {
   const navigate = useNavigate();
+  const {favoriteMovies,toggleFavoriteMovie} =useContext(ContextAll)
+  const isFavorite = favoriteMovies.includes(movie.id);
 
   const clickHandler = () => {
     navigate(`/movie/${movie.id}`)
@@ -25,6 +31,11 @@ export function MovieCard({ movie }: Props) {
         ) : (
           <div className={styles.placeholder}>No Image Available</div>
         )}
+      </div>
+      <div className={styles.favorite}>        
+      <IconButton aria-label="add to favorites" onClick={() => toggleFavoriteMovie(movie.id)}>
+          <FavoriteIcon fontSize="small" color={isFavorite? "primary" : 'action'}/>          
+      </IconButton>
       </div>
       <h4>{movie.name || "No Title"}</h4>
       <span>{movie.year}</span>

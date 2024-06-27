@@ -73,3 +73,9 @@ h4 {
 .container span {
   color: rgb(135, 93, 174);
 }
+
+.favorite {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+}

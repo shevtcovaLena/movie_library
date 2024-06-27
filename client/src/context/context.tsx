@@ -1,11 +1,10 @@
 
-import React from "react";
+import React, { useEffect } from "react";
 import { useState, createContext } from "react";
-import { IMovie } from "../components/MovieList/MovieList";
 
 export interface IContext {
-  movie: IMovie | null;
-  setMovie: React.Dispatch<React.SetStateAction<IMovie | null>>;
+  favoriteMovies: string[];
+  toggleFavoriteMovie: (id: string) => void;
 }
 
 export const ContextAll: React.Context<IContext> = createContext(
@@ -18,11 +17,33 @@ export const MovieContextProvider = ({
   children: React.ReactNode;
 }): JSX.Element => {
 
-  const [movie, setMovie] = useState<IMovie | null>(null);
+  const [favoriteMovies, setFavoriteMovies] = useState<string[]>([]);
+
+  useEffect(() => {
+    const storedFavorites = localStorage.getItem('favoriteMovies');
+    if (storedFavorites) {
+      setFavoriteMovies(JSON.parse(storedFavorites))
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('favoriteMovies', JSON.stringify(favoriteMovies));
+  }, [favoriteMovies]);
+
+  const toggleFavoriteMovie = (id: string) => {
+    setFavoriteMovies((prevFavorites :string[]) => {
+      const isFavorite = prevFavorites.some((fav: string) => fav === id);
+      if (isFavorite) {
+        return prevFavorites.filter((fav: string) => fav !== id);
+      } else {
+        return [...prevFavorites, id];
+      }
+    });
+  };
  
   const contextValue: IContext = {
-    movie,
-    setMovie,
+    favoriteMovies, 
+    toggleFavoriteMovie,
   };
   return (
     <ContextAll.Provider value={contextValue}>{children}</ContextAll.Provider>
