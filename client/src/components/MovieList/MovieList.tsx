@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import api from "../../api";
 import data from "../../assets/api.json";
 import { MovieCard, Filter } from "..";

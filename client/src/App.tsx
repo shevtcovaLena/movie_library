@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import "./App.css";
 import { MainPage, OneMoviePage } from "./pages";
 import { Route, Routes, useNavigate } from 'react-router-dom';

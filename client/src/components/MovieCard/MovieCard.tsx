@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { IMovie } from "../MovieList/MovieList";
 import styles from "./MovieCard.module.css";
 import { useNavigate } from "react-router-dom";

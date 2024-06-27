@@ -250,7 +250,7 @@ export function Filter({
             aria-labelledby="demo-radio-buttons-group-label"
             defaultValue=""
             name="radio-buttons-group"
-            onChange={(e, value) => onRatingChange(value)}
+            onChange={(_, value) => onRatingChange(value)}
           >
             <FormControlLabel value="" control={<Radio />} label="не выбран" />
             <FormControlLabel
