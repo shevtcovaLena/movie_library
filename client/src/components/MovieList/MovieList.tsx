@@ -28,7 +28,7 @@ export interface IMovie {
 export function MovieList({ favorites }: { favorites?: boolean }) {
   const [movies, setMovies] = useState<IMovie[]>([]);
   const [page, setPage] = useState(1);
-  const [pageCount, setPageCount] = useState<number>(1)
+  const [pageCount, setPageCount] = useState<number>(1);
   const [selectedGenre, setSelectedGenre] = useState<string>("");
   const [selectedRating, setSelectedRating] = useState<string>("");
   const [selectedYear, setSelectedYear] = useState<string>("");
@@ -62,7 +62,7 @@ export function MovieList({ favorites }: { favorites?: boolean }) {
               "poster",
               "genres",
             ],
-            ...(idArray.length && { id: idArray }),
+            ...(idArray && { id: idArray }),
             ...(genreQuery && { "genres.name": genreQuery }),
             ...(ratingQuery && { "rating.imdb": ratingQuery }),
             ...(selectedYear && { year: selectedYear }),
@@ -76,7 +76,9 @@ export function MovieList({ favorites }: { favorites?: boolean }) {
         console.error("Error fetching movies", error);
       }
     };
-    fetchMovies();
+    if (idArray.length || !favorites) {
+      fetchMovies()
+    };
   }, [page, selectedGenre, selectedRating, selectedYear, idArray]);
 
   return (
@@ -100,7 +102,9 @@ export function MovieList({ favorites }: { favorites?: boolean }) {
       <div className={styles.mainbox}>
         {!isLoading &&
           movies.length !== 0 &&
-          movies.map((movie, index) => <MovieCard movie={movie} key={movie.id} index={index}/>)}
+          movies.map((movie, index) => (
+            <MovieCard movie={movie} key={movie.id} index={index} />
+          ))}
         {isLoading &&
           movies.length !== 0 &&
           new Array(50)
@@ -113,7 +117,11 @@ export function MovieList({ favorites }: { favorites?: boolean }) {
                 sx={{ m: 1 }}
               />
             ))}
-        {(movies.length === 0) && <div><p>Результаты отсутствуют. Попробуйте изменить запрос.</p></div>}
+        {!isLoading && movies.length === 0 && (
+          <div>
+            <p>Результаты отсутствуют. Попробуйте изменить запрос.</p>
+          </div>
+        )}
       </div>
       <Pagination
         sx={{ m: 1 }}
