@@ -1,6 +1,6 @@
 import { useContext, useEffect, useLayoutEffect, useState } from "react";
 import api from "../../api";
-import data from "../../assets/api.json";
+// import data from "../../assets/api.json";
 import { MovieCard, Filter } from "..";
 import styles from "./MovieList.module.css";
 import { Pagination, Skeleton } from "@mui/material";

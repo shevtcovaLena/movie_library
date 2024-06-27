@@ -184,20 +184,20 @@ export function Filter({
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [genres, setGenres] = useState<typeof genresInit>(genresInit);
 
-  // useEffect(() => {
-  //     const fetchGenres = async () => {
-  //       try {
-  //   const response = await api.get<GenreData[]>('v1/movie/possible-values-by-field', {
-  //     method: 'GET',
-  //     params: {field: 'genres.name'},
-  //   });
-  //   setGenres(response.data.map((el) => el.name));
-  //   } catch (error) {
-  //     console.error('Error fetching movies', error);
-  //   }
-  //   };
-  //   fetchGenres();
-  // }, []);
+  useEffect(() => {
+      const fetchGenres = async () => {
+        try {
+    const response = await api.get<GenreData[]>('v1/movie/possible-values-by-field', {
+      method: 'GET',
+      params: {field: 'genres.name'},
+    });
+    setGenres(response.data.map((el) => el.name));
+    } catch (error) {
+      console.error('Error fetching movies', error);
+    }
+    };
+    fetchGenres();
+  }, []);
 
   return (
     <div className={styles.container}>
