@@ -181,7 +181,6 @@ export function Filter({
   onRatingChange,
   onYearChange,
 }:FilterProps) {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [genres, setGenres] = useState<typeof genresInit>(genresInit);
 
   useEffect(() => {

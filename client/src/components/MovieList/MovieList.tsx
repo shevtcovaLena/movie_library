@@ -1,6 +1,5 @@
 import { useContext, useEffect, useLayoutEffect, useState } from "react";
 import api from "../../api";
-// import data from "../../assets/api.json";
 import { MovieCard, Filter } from "..";
 import styles from "./MovieList.module.css";
 import { Pagination, Skeleton } from "@mui/material";
@@ -73,7 +72,6 @@ export function MovieList({ favorites }: { favorites?: boolean }) {
         setMovies(response.data.docs);
         setPageCount(response.data.pages);
         setLoading(false);
-        // setMovies(data.docs);
       } catch (error) {
         console.error("Error fetching movies", error);
       }
@@ -100,12 +98,11 @@ export function MovieList({ favorites }: { favorites?: boolean }) {
         page={page}
       />
       <div className={styles.mainbox}>
-        {/* =----------------------------------------------------------------------------- */}
-
         {!isLoading &&
           movies.length !== 0 &&
-          movies.map((movie) => <MovieCard movie={movie} key={movie.id} />)}
+          movies.map((movie, index) => <MovieCard movie={movie} key={movie.id} index={index}/>)}
         {isLoading &&
+          movies.length !== 0 &&
           new Array(50)
             .fill(0)
             .map(() => (

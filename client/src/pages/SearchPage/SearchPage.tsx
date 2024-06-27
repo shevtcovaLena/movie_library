@@ -1,4 +1,3 @@
-// import React from "react";
 import { MovieCard } from "../../components";
 import { useEffect, useState } from "react";
 import api from "../../api";
@@ -75,12 +74,11 @@ export function SearchPage() {
         page={page}
       />
       <div className={styles.mainbox}>
-        {/* =----------------------------------------------------------------------------- */}
-
         {!isLoading &&
           movies.length !== 0 &&
-          movies.map((movie) => <MovieCard movie={movie} key={movie.id} />)}
+          movies.map((movie, index) => <MovieCard movie={movie} key={movie.id} index={index}/>)}
         {isLoading &&
+          movies.length !== 0 &&
           new Array(50)
             .fill(0)
             .map(() => (

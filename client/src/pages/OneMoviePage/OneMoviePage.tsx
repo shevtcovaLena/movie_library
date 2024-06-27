@@ -37,7 +37,9 @@ export function OneMoviePage() {
           <h1>
             {movie.name} ({movie.year})
           </h1>
+          <br/>
           <p className="description">{movie.description}</p>
+          <br/>
           <div className="ratings">
             <p>
               <strong>Рейтинг:</strong>
