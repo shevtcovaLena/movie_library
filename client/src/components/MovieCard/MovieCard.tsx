@@ -1,16 +1,24 @@
-import React from "react";
-import { Movie } from "../MovieList/MovieList";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import React, { useContext } from "react";
+import { IMovie } from "../MovieList/MovieList";
 import styles from "./MovieCard.module.css";
+import { useNavigate } from "react-router-dom";
 
 interface Props {
-  movie: Movie;
+  movie: IMovie;
 }
 
 export function MovieCard({ movie }: Props) {
+  const navigate = useNavigate();
+
+  const clickHandler = () => {
+    navigate(`/movie/${movie.id}`)
+  }
+
   return (
     <div className={styles.container} key={movie.id}>
-      <div className={styles.imgbox}>
-        {movie.poster?.previewUrl || movie.poster?.url ? (
+      <div className={styles.imgbox} onClick={clickHandler}>
+        {movie?.poster?.previewUrl || movie?.poster?.url ? (
           <img
             src={movie.poster.previewUrl || movie.poster.url}
             alt={movie.name || "No Title"}

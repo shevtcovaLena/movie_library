@@ -1,5 +1,6 @@
 .mainbox {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+

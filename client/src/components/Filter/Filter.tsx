@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
 // import api from "../api";
+import Select, { SelectChangeEvent } from "@mui/material/Select";
 import {
   RadioGroup,
   FormControlLabel,
   FormControl,
   FormLabel,
-  Box,
   Radio,
   InputLabel,
   MenuItem,
 } from "@mui/material";
-import Select, { SelectChangeEvent } from "@mui/material/Select";
+import styles from './Filter.module.css'
 
 interface FilterProps {
   onGenreChange: (genre: string) => void;
@@ -23,7 +23,6 @@ export interface GenreData {
   slug: string;
 }
 
-const ratings = ["не выбран", "выше 6", "выше 7", "выше 8", "выше 9"];
 const genreData = [
   {
     name: "аниме",
@@ -177,11 +176,11 @@ const years = [
   "1990-2000",
 ];
 
-const Filter: React.FC<FilterProps> = ({
+export function Filter({
   onGenreChange,
   onRatingChange,
   onYearChange,
-}) => {
+}:FilterProps) {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [genres, setGenres] = useState<typeof genresInit>(genresInit);
 
@@ -200,114 +199,82 @@ const Filter: React.FC<FilterProps> = ({
     // fetchGenres();
   }, []);
 
-//---------------------------------------------------------
-  const [age, setAge] = React.useState("");             //|
-
-  const handleChange = (event: SelectChangeEvent) => {
-    setAge(event.target.value as string);
-  };
-
-
   return (
-    <div>
-      <div>
-        <label>Жанр:</label>
-        <select onChange={(e) => onGenreChange(e.target.value)}>
-          <option value="">Все</option>
-          {genres.map((genre) => (
-            <option key={genre} value={genre}>
-              {genre}
-            </option>
-          ))}
-        </select>
-      </div>
-      <div>
-        <label>Год:</label>
-        <select onChange={(e) => onYearChange(e.target.value)}>
-          <option value="">Все</option>
-          {years.map((year) => (
-            <option key={year} value={year}>
-              {year}
-            </option>
-          ))}
-        </select>
-      </div>
-      <div>
-        <FormControl fullWidth>
-        <InputLabel id="demo-simple-select-label">Age</InputLabel>
+    <div className={styles.container}>
+      <FormControl sx={{ m: 1, minWidth: 200 }}>
+        <InputLabel >Жанр</InputLabel>
         <Select
+          style={{ color: "inherit", textTransform: "capitalize" }}
           labelId="demo-simple-select-label"
           id="demo-simple-select"
-          value={age}
-          label="Age"
-          onChange={handleChange}
+          label="Жанр"
+          onChange={(e) => onGenreChange(e.target.value as string)}
         >
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
+          {genres.map((genre, index) => (
+            <MenuItem
+              key={index}
+              value={genre}
+              style={{ textTransform: "capitalize" }}
+            >
+              {genre}
+            </MenuItem>
+          ))}
         </Select>
       </FormControl>
-        <FormControl>
-          <FormLabel
-            id="demo-radio-buttons-group-label"
-            style={{ color: "inherit" }}
-          >
-            Рейтинг:
-          </FormLabel>
+      <FormControl sx={{ m: 1, minWidth: 200 }}>
+        <InputLabel id="demo-simple-select-label">Год</InputLabel>
+        <Select
+          style={{ color: "inherit", textTransform: "capitalize" }}
+          labelId="demo-simple-select-label"
+          id="demo-simple-select"
+          label="Год"
+          onChange={(e) => onYearChange(e.target.value as string)}
+        >
+          {years.map((year, index) => (
+            <MenuItem
+              key={index}
+              value={year}
+              style={{ textTransform: "capitalize" }}
+            >
+              {year}
+            </MenuItem>
+          ))}
+        </Select>
+      </FormControl>
+      <div>
+        <FormControl sx={{ m: 1, minWidth: 200 }}>
+          <FormLabel id="demo-radio-buttons-group-label">Рейтинг:</FormLabel>
           <RadioGroup
+            row
             aria-labelledby="demo-radio-buttons-group-label"
             defaultValue=""
             name="radio-buttons-group"
             onChange={(e, value) => onRatingChange(value)}
           >
-            <FormControlLabel value="" control={<Radio />} label="Не выбран" />
+            <FormControlLabel value="" control={<Radio />} label="не выбран" />
             <FormControlLabel
               value="6-10"
               control={<Radio />}
-              label="Больше 6"
+              label="больше 6"
             />
             <FormControlLabel
               value="7-10"
               control={<Radio />}
-              label="Больше 7"
+              label="больше 7"
             />
             <FormControlLabel
               value="8-10"
               control={<Radio />}
-              label="Больше 8"
+              label="больше 8"
             />
             <FormControlLabel
               value="9-10"
               control={<Radio />}
-              label="Больше 9"
+              label="больше 9"
             />
           </RadioGroup>
         </FormControl>
-        {/* <label>Рейтинг:</label>
-        {ratings.map((rating) => (
-          <label key={rating}>
-            <input
-              type="radio"
-              name="rating"
-              value={rating}
-              onChange={(e) => onRatingChange(e.target.value)}
-            />
-            {rating}
-          </label>
-        ))} */}
       </div>
     </div>
   );
 };
-
-export default Filter;
-
-// export function BasicSelect() {
-
-
-  // return (
-    // <Box sx={{ minWidth: 120 }}>
-      
-    // </Box>
-//   );
-// }
