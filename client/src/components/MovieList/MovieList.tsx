@@ -1,9 +1,10 @@
-import { useContext, useEffect, useLayoutEffect, useState } from "react";
+import { useContext, useEffect, useState, useCallback } from "react";
 import api from "../../api";
 import { MovieCard, Filter } from "..";
 import styles from "./MovieList.module.css";
 import { Pagination, Skeleton } from "@mui/material";
 import { ContextAll } from "../../context/context";
+import { debounce } from "lodash";
 
 export interface IMovie {
   id: string;
@@ -29,63 +30,64 @@ export function MovieList({ favorites }: { favorites?: boolean }) {
   const [movies, setMovies] = useState<IMovie[]>([]);
   const [page, setPage] = useState(1);
   const [pageCount, setPageCount] = useState<number>(1);
-  const [selectedGenre, setSelectedGenre] = useState<string>("");
-  const [selectedRating, setSelectedRating] = useState<string>("");
-  const [selectedYear, setSelectedYear] = useState<string>("");
+  const [selectedGenres, setSelectedGenres] = useState<string[]>([]);
+  const [selectedRating, setSelectedRating] = useState<[number, number]>([0, 10]);
+  const [selectedYear, setSelectedYear] = useState<[number, number]>([1990, 2030]);
   const [isLoading, setLoading] = useState<boolean>(true);
-  const [idArray, setIdArray] = useState<string[]>([]);
   const { favoriteMovies } = useContext(ContextAll);
 
-  useLayoutEffect(() => {
-    setIdArray(() => {
-      return favorites ? favoriteMovies : [];
-    });
-  }, []);
+  const fetchMovies = useCallback(async () => {
+    console.log('запрос');
+    
+    setLoading(true);
+    try {
+      const response = await api.get("/v1.4/movie", {
+        params: {
+          page,
+          limit: 50,
+          selectFields: [
+            "id",
+            "name",
+            "description",
+            "year",
+            "releaseYears",
+            "rating",
+            "poster",
+            "genres",
+          ],
+          ...(favorites && { id: favoriteMovies }),
+          ...(selectedGenres.length > 0 && { "genres.name": selectedGenres }),
+          ...(selectedRating && { "rating.imdb": `${selectedRating[0]}-${selectedRating[1]}` }),
+          ...(selectedYear && { year: `${selectedYear[0]}-${selectedYear[1]}` }),
+          notNullFields: ["name", "year", "rating.imdb", "poster.url"],
+        },
+      });
+      setMovies(response.data.docs);
+      setPageCount(response.data.pages);
+    } catch (error) {
+      console.error("Error fetching movies", error);
+    } finally {
+      setLoading(false);
+    }
+  }, [page, selectedGenres, selectedRating, selectedYear, favorites, favoriteMovies]);
+
+  const debouncedFetchMovies = useCallback(debounce(fetchMovies, 1500), [
+    fetchMovies,
+  ]);
 
   useEffect(() => {
-    const fetchMovies = async () => {
-      try {
-        const genreQuery = selectedGenre ? selectedGenre : undefined;
-        const ratingQuery = selectedRating ? selectedRating : undefined;
+    fetchMovies();
+  }, [page]);
 
-        const response = await api.get("/v1.4/movie", {
-          params: {
-            page,
-            limit: 50,
-            selectFields: [
-              "id",
-              "name",
-              "description",
-              "year",
-              "releaseYears",
-              "rating",
-              "poster",
-              "genres",
-            ],
-            ...(idArray && { id: idArray }),
-            ...(genreQuery && { "genres.name": genreQuery }),
-            ...(ratingQuery && { "rating.imdb": ratingQuery }),
-            ...(selectedYear && { year: selectedYear }),
-            notNullFields: ["name", "year", "rating.imdb", "poster.url"],
-          },
-        });
-        setMovies(response.data.docs);
-        setPageCount(response.data.pages);
-        setLoading(false);
-      } catch (error) {
-        console.error("Error fetching movies", error);
-      }
-    };
-    if (idArray.length || !favorites) {
-      fetchMovies()
-    };
-  }, [page, selectedGenre, selectedRating, selectedYear, idArray]);
+  useEffect(() => {
+    debouncedFetchMovies();
+  }, [debouncedFetchMovies, selectedGenres, selectedRating, selectedYear, favorites, favoriteMovies]);
 
   return (
     <>
       <div>
         <Filter
-          onGenreChange={setSelectedGenre}
+          onGenresChange={setSelectedGenres}
           onRatingChange={setSelectedRating}
           onYearChange={setSelectedYear}
         />
@@ -106,11 +108,11 @@ export function MovieList({ favorites }: { favorites?: boolean }) {
             <MovieCard movie={movie} key={movie.id} index={index} />
           ))}
         {isLoading &&
-          movies.length !== 0 &&
           new Array(50)
             .fill(0)
-            .map(() => (
+            .map((_, index) => (
               <Skeleton
+                key={index}
                 variant="rectangular"
                 width={210}
                 height={349}

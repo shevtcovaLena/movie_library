@@ -1,21 +1,21 @@
 import { useEffect, useState } from "react";
-import Select from "@mui/material/Select";
+import Select, { SelectChangeEvent } from "@mui/material/Select";
 import {
-  RadioGroup,
-  FormControlLabel,
   FormControl,
   FormLabel,
-  Radio,
   InputLabel,
   MenuItem,
+  Slider,
+  Checkbox,
 } from "@mui/material";
 import styles from './Filter.module.css'
 import api from "../../api";
 
 interface FilterProps {
-  onGenreChange: (genre: string) => void;
-  onRatingChange: (rating: string) => void;
-  onYearChange: (year: string) => void;
+  onGenresChange: (genres: string[]) => void;
+  onRatingChange: (rating: [number, number]) => void;
+  onYearChange: (year: [number, number]) => void;
+  // onDebounce: (need: boolean) => void;
 }
 
 export interface GenreData {
@@ -156,124 +156,115 @@ const genreData = [
 
 const genresInit = genreData.map((el) => el.name);
 
+const currentYear = new Date().getFullYear();
+
 const years = [
-  "2024",
-  "2023",
-  "2022",
-  "2021",
-  "2020",
-  "2019",
-  "2018",
-  "2017",
-  "2016",
-  "2015",
-  "2014",
-  "2013",
-  "2012",
-  "2011",
-  "2006-2010",
-  "2001-2005",
-  "1990-2000",
+  { value: 1990, label: "1990" },
+  { value: 2000, label: "2000" },
+  { value: 2010, label: "2010" },
+  { value: 2020, label: "2020" },
+  { value: currentYear, label: `${currentYear}` },
+];
+
+const ratings = [
+  { value: 0, label: "0" },
+  { value: 2, label: "2" },
+  { value: 4, label: "4" },
+  { value: 6, label: "6" },
+  { value: 8, label: "8" },
+  { value: 10, label: "10" },
 ];
 
 export function Filter({
-  onGenreChange,
+  onGenresChange,
   onRatingChange,
   onYearChange,
-}:FilterProps) {
-  const [genres, setGenres] = useState<typeof genresInit>(genresInit);
+  // onDebounce,
+}: FilterProps) {
+  const [genres, setGenres] = useState<string[]>(genresInit);
+  const [selectedGenres, setSelectedGenres] = useState<string[]>([]);
+  const [selectedRating, setSelectedRating] = useState<[number, number]>([0, 10]);
+  const [selectedYear, setSelectedYear] = useState<[number, number]>([1990, 2030]);
 
   useEffect(() => {
-      const fetchGenres = async () => {
-        try {
-    const response = await api.get<GenreData[]>('v1/movie/possible-values-by-field', {
-      method: 'GET',
-      params: {field: 'genres.name'},
-    });
-    setGenres(response.data.map((el) => el.name));
-    } catch (error) {
-      console.error('Error fetching movies', error);
-    }
+    const fetchGenres = async () => {
+      try {
+        const response = await api.get<GenreData[]>(
+          "v1/movie/possible-values-by-field",
+          {
+            params: { field: "genres.name" },
+          }
+        );
+        setGenres(response.data.map((el) => el.name));
+      } catch (error) {
+        console.error("Error fetching genres", error);
+      }
     };
     fetchGenres();
   }, []);
 
+  const handleGenreChange = (event: SelectChangeEvent<string | string[]>) => {
+    const selectedGenres = Array.isArray(event.target.value) ? event.target.value : [event.target.value];
+    setSelectedGenres(selectedGenres);
+    onGenresChange(selectedGenres);
+    // onDebounce(true);
+  };
+
+  const handleRatingChange = (_: Event, newValue: number | number[]) => {
+    setSelectedRating(newValue as [number, number]);
+    onRatingChange(newValue as [number, number]);
+    // onDebounce(true);
+  };
+  
+  const handleYearChange = (_: Event, newValue: number | number[]) => {
+    setSelectedYear(newValue as [number, number]);
+    onYearChange(newValue as [number, number]);
+    // onDebounce(true);
+  };
+
   return (
     <div className={styles.container}>
       <FormControl sx={{ m: 1, minWidth: 200 }}>
-        <InputLabel >Жанр</InputLabel>
+        <InputLabel>Жанры</InputLabel>
         <Select
-          style={{ color: "inherit", textTransform: "capitalize" }}
-          labelId="demo-simple-select-label"
-          id="demo-simple-select"
-          label="Жанр"
-          onChange={(e) => onGenreChange(e.target.value as string)}
+          multiple
+          value={selectedGenres}
+          onChange={(e) => handleGenreChange(e)}
+          renderValue={(selected) => (selected as string[]).join(", ")}
+          label="Genres"
         >
           {genres.map((genre, index) => (
-            <MenuItem
-              key={index}
-              value={genre}
-              style={{ textTransform: "capitalize" }}
-            >
+            <MenuItem key={index} value={genre}>
+              <Checkbox checked={selectedGenres.includes(genre)} />
               {genre}
             </MenuItem>
           ))}
         </Select>
       </FormControl>
       <FormControl sx={{ m: 1, minWidth: 200 }}>
-        <InputLabel id="demo-simple-select-label">Год</InputLabel>
-        <Select
-          style={{ color: "inherit", textTransform: "capitalize" }}
-          labelId="demo-simple-select-label"
-          id="demo-simple-select"
-          label="Год"
-          onChange={(e) => onYearChange(e.target.value as string)}
-        >
-          {years.map((year, index) => (
-            <MenuItem
-              key={index}
-              value={year}
-              style={{ textTransform: "capitalize" }}
-            >
-              {year}
-            </MenuItem>
-          ))}
-        </Select>
+        <FormLabel>Год</FormLabel>
+        <Slider
+          value={selectedYear}
+          onChange={handleYearChange}
+          valueLabelDisplay="auto"
+          min={1990}
+          max={currentYear}
+          step={1}
+          marks={years}
+        />
       </FormControl>
-      <div>
-        <FormControl sx={{ m: 1, minWidth: 200 }}>
-          <FormLabel id="demo-radio-buttons-group-label">Рейтинг:</FormLabel>
-          <RadioGroup
-            row
-            aria-labelledby="demo-radio-buttons-group-label"
-            defaultValue=""
-            name="radio-buttons-group"
-            onChange={(_, value) => onRatingChange(value)}
-          >
-            <FormControlLabel value="" control={<Radio />} label="не выбран" />
-            <FormControlLabel
-              value="6-10"
-              control={<Radio />}
-              label="больше 6"
-            />
-            <FormControlLabel
-              value="7-10"
-              control={<Radio />}
-              label="больше 7"
-            />
-            <FormControlLabel
-              value="8-10"
-              control={<Radio />}
-              label="больше 8"
-            />
-            <FormControlLabel
-              value="9-10"
-              control={<Radio />}
-              label="больше 9"
-            />
-          </RadioGroup>
-        </FormControl>
-      </div>
+      <FormControl sx={{ m: 1, minWidth: 200 }}>
+        <FormLabel>Рейтинг</FormLabel>
+        <Slider
+          value={selectedRating}
+          onChange={handleRatingChange}
+          valueLabelDisplay="auto"
+          min={0}
+          max={10}
+          step={1}
+          marks={ratings}
+        />
+      </FormControl>
     </div>
   );
-};
+}
