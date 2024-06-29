@@ -1,10 +1,8 @@
 import "./App.css";
-import { MainPage, OneMoviePage } from "./pages";
+import { MainPage, OneMoviePage, FavoritePage, SearchPage } from "./pages";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import { SearchBar } from "./components";
 import { Button } from "@mui/material";
-import { FavoritePage } from "./pages/FavoritesPage/FavoritesPage";
-import { SearchPage } from "./pages/SearchPage/SearchPage";
 
 function App() {
   const navigate = useNavigate();

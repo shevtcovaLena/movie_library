@@ -1,6 +1,5 @@
 import { useContext, useEffect, useState, useCallback, useRef } from "react";
 import api from "../../api";
-// import data from "../../assets/api.json";
 import { MovieCard, Filter } from "..";
 import styles from "./MovieList.module.css";
 import { Pagination, Skeleton } from "@mui/material";
@@ -80,8 +79,6 @@ export function MovieList({ favorites }: { favorites?: boolean }) {
       });
       setMovies(response.data.docs);
       setPageCount(response.data.pages);
-      // setMovies(data.docs);
-      // setPageCount(data.pages);
     } catch (error) {
       console.error("Error fetching movies", error);
     } finally {
