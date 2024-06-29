@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { MutableRefObject, useEffect, useState } from "react";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import {
   FormControl,
@@ -15,7 +15,7 @@ interface FilterProps {
   onGenresChange: (genres: string[]) => void;
   onRatingChange: (rating: [number, number]) => void;
   onYearChange: (year: [number, number]) => void;
-  // onDebounce: (need: boolean) => void;
+  needDelayRef: MutableRefObject<boolean>;
 }
 
 export interface GenreData {
@@ -179,47 +179,47 @@ export function Filter({
   onGenresChange,
   onRatingChange,
   onYearChange,
-  // onDebounce,
+  needDelayRef,
 }: FilterProps) {
   const [genres, setGenres] = useState<string[]>(genresInit);
   const [selectedGenres, setSelectedGenres] = useState<string[]>([]);
   const [selectedRating, setSelectedRating] = useState<[number, number]>([0, 10]);
   const [selectedYear, setSelectedYear] = useState<[number, number]>([1990, 2030]);
 
-  useEffect(() => {
-    const fetchGenres = async () => {
-      try {
-        const response = await api.get<GenreData[]>(
-          "v1/movie/possible-values-by-field",
-          {
-            params: { field: "genres.name" },
-          }
-        );
-        setGenres(response.data.map((el) => el.name));
-      } catch (error) {
-        console.error("Error fetching genres", error);
-      }
-    };
-    fetchGenres();
-  }, []);
+  // useEffect(() => {
+  //   const fetchGenres = async () => {
+  //     try {
+  //       const response = await api.get<GenreData[]>(
+  //         "v1/movie/possible-values-by-field",
+  //         {
+  //           params: { field: "genres.name" },
+  //         }
+  //       );
+  //       setGenres(response.data.map((el) => el.name));
+  //     } catch (error) {
+  //       console.error("Error fetching genres", error);
+  //     }
+  //   };
+  //   fetchGenres();
+  // }, []);
 
   const handleGenreChange = (event: SelectChangeEvent<string | string[]>) => {
     const selectedGenres = Array.isArray(event.target.value) ? event.target.value : [event.target.value];
     setSelectedGenres(selectedGenres);
     onGenresChange(selectedGenres);
-    // onDebounce(true);
+    needDelayRef.current = true;
   };
 
   const handleRatingChange = (_: Event, newValue: number | number[]) => {
     setSelectedRating(newValue as [number, number]);
     onRatingChange(newValue as [number, number]);
-    // onDebounce(true);
+    needDelayRef.current = true;
   };
   
   const handleYearChange = (_: Event, newValue: number | number[]) => {
     setSelectedYear(newValue as [number, number]);
     onYearChange(newValue as [number, number]);
-    // onDebounce(true);
+    needDelayRef.current = true;
   };
 
   return (

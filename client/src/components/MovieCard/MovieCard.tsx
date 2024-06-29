@@ -26,7 +26,7 @@ export function MovieCard({ movie }: Props) {
     <div className={styles.container} key={movie.id}>
       <div className={styles.imgbox} onClick={clickHandler}>
         {movie?.poster?.previewUrl || movie?.poster?.url ? (
-          <LazyLoad height={300} offset={200} once>
+          <LazyLoad height={200} offset={200} once style={{height: "300px",}}>
             {!isLoaded && <Skeleton variant="rectangular" width="100%" height={300} />}
             <img
               src={movie.poster.previewUrl || movie.poster.url}
