@@ -2,8 +2,10 @@
 
 Приложение можно посмотреть здесь: https://movie-library-ochre.vercel.app/
 либо запустить:
+```
 $cd client
 $npm run dev
+```
 
 Если закончились запросы по токену API, то в файле client/src/api.ts есть еще пара токенов.
 
