@@ -186,22 +186,22 @@ export function Filter({
   const [selectedRating, setSelectedRating] = useState<[number, number]>([0, 10]);
   const [selectedYear, setSelectedYear] = useState<[number, number]>([1990, 2030]);
 
-  // useEffect(() => {
-  //   const fetchGenres = async () => {
-  //     try {
-  //       const response = await api.get<GenreData[]>(
-  //         "v1/movie/possible-values-by-field",
-  //         {
-  //           params: { field: "genres.name" },
-  //         }
-  //       );
-  //       setGenres(response.data.map((el) => el.name));
-  //     } catch (error) {
-  //       console.error("Error fetching genres", error);
-  //     }
-  //   };
-  //   fetchGenres();
-  // }, []);
+  useEffect(() => {
+    const fetchGenres = async () => {
+      try {
+        const response = await api.get<GenreData[]>(
+          "v1/movie/possible-values-by-field",
+          {
+            params: { field: "genres.name" },
+          }
+        );
+        setGenres(response.data.map((el) => el.name));
+      } catch (error) {
+        console.error("Error fetching genres", error);
+      }
+    };
+    fetchGenres();
+  }, []);
 
   const handleGenreChange = (event: SelectChangeEvent<string | string[]>) => {
     const selectedGenres = Array.isArray(event.target.value) ? event.target.value : [event.target.value];
